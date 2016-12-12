@@ -1,6 +1,6 @@
     html {
-      background:#018DED url(http://unsplash.it/1500/1000?blur=50);
-      background-size:cover;
+      background:white url(small_steps.png);
+      background-repeat: repeat;
       font-family:'helvetica neue';
       text-align: center;
       font-size: 10px;
@@ -8,10 +8,15 @@
 
     body {
       font-size: 2rem;
+      font-family: monospace;
+
+    }
+    
+    #clock-container{
       display:flex;
       flex:1;
-      min-height: 100vh;
       align-items: center;
+      min-height: 80vh;
     }
 
     .clock {
@@ -27,7 +32,7 @@
         inset 0 0 0 3px #EFEFEF,
         inset 0 0 10px black,
         0 0 10px rgba(0,0,0,0.2);*/
-      background-image: url("clock-layout.png");
+      background-image: url("clock-template.png");
     }
 
     .clock-face {
@@ -76,8 +81,8 @@
     .second-hand{
       
       /*width:50%;*/
-      width:159px;
-      margin-left:20%;
+      width:200px;
+      margin-left:12.2%;
       height:3px;
       background:black;
       position: absolute;
@@ -87,4 +92,8 @@
       transition: all 0.05s;
       transition-timing-function: cubic-bezier(0.1, 2.7, 0.58, 1);
       
+    }
+    
+    #digit{
+      font-size:3em;
     }
